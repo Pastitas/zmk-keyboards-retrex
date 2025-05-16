@@ -1,30 +1,25 @@
-# katori ZMK Module
+# retrex ZMK Module
 
-This repository contains the shield files for the [katori](https://github.com/taichan1113/katori) to allow users to build firmware. This can be done by adding the module to the west.yml found in your zmk-config's config directory. There is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules)
+This repository contains the shield files for the [retrex](https://github.com/Pastitas/Retrex-Keyboard) to allow users to build firmware. This can be done by adding the module to the west.yml found in your zmk-config's config directory. There is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules)
 
 ## Usage
 
-Edit your west.yml file found in your zmk-config's config directory to add the akohekohe module. Example:
+Edit your west.yml file found in your zmk-config's config directory to add the module. Example:
 
 ```
 manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejoganson
-      url-base: https://github.com/petejohanson
-    - name: grassfedreeve
-      url-base: https://github.com/grassfedreeve
+    - name: pastitas
+      url-base: https://github.com/Pastitas
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: ec-support-zmk-module
-      remote: petejohanson
-      revision: main
-    - name: zmk-keyboards-katori
-      remote: grassfedreeve
+    - name: zmk-keyboards-retrex
+      remote: pastitas
       revision: main
   self:
     path: config

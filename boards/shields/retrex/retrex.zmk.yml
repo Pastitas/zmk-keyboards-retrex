@@ -1,0 +1,12 @@
+file_format: "1"
+id: retrex
+name: Retrex
+type: shield
+url: https://github.com/pastitas/retrex-keyboard
+requires: [pro_micro]
+features:
+  - keys
+  - underglow
+siblings:
+  - retrex_left
+  - retrex_right
